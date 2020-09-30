@@ -18,6 +18,12 @@ public class Account {
         this.email = email;
         this.password = password;
     }
+
+    public Profile getFirstProfile() {
+        return profiles.get(0);
+    }
+
+
     public void setStreamingPlan(StreamingPlan streamingPlan) {
         this.streamingPlan = streamingPlan;
     }
@@ -43,7 +49,4 @@ public class Account {
         this.paymentInfo = paymentInfo;
     }
 
-    public Profile getFirstProfile() {
-        return profiles.get(0);
-    }
 }
